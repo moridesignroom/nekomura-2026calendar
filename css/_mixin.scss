@@ -1,0 +1,28 @@
+$pc: 1250px;
+$wtab: 950px;
+$tab: 700px;
+$ssp: 370px;
+
+@mixin pc {
+    @media screen and (min-width: $pc) {
+        @content;
+    }
+}
+
+@mixin wtab {
+    @media screen and (min-width: $wtab) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and (min-width: $tab) {
+        @content;
+    }
+}
+
+@mixin ssp {
+    @media screen and (max-width: $ssp) {
+        @content;
+    }
+}

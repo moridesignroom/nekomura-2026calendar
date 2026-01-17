@@ -1,0 +1,483 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #022B71;
+  font-family: "Yu Mincho", "YuMincho", "MS PMincho", serif;
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: #F4F4F4;
+}
+
+a {
+  text-decoration: none;
+  color: #F4F4F4;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+li {
+  list-style-type: none;
+}
+
+.font-navy {
+  color: #03276a;
+  font-weight: 400;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-align: center;
+  margin-block: 24px 64px;
+}
+@media screen and (min-width: 700px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+
+footer {
+  border-top: 0.5px solid #F4F4F4;
+  margin-top: 200px;
+  padding: 40px 16px 16px;
+}
+
+.sns {
+  height: 34px;
+  width: auto;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 700px) {
+  .sns {
+    height: 45px;
+  }
+}
+.sns a {
+  height: 100%;
+}
+.sns a img {
+  height: 100%;
+}
+
+.bg-gradation {
+  background-image: linear-gradient(155deg, #8e7efe, #3F51D2 8%, #03368e 19%, #022B71);
+  text-align: center;
+  line-height: 2;
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 700px) {
+  .bg-gradation {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .bg-gradation {
+    font-size: 1.4rem;
+  }
+}
+
+.heading {
+  position: relative;
+  height: 100vh;
+  padding-top: 50vh;
+}
+.heading .first-star {
+  position: absolute;
+  top: 16%;
+  right: 12%;
+  width: 32px;
+  height: auto;
+}
+@media screen and (min-width: 700px) {
+  .heading .first-star {
+    width: 56px;
+  }
+}
+.heading .first-star img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  animation: twinkle 5s infinite;
+}
+.heading .first-star img:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.heading .first-star img:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.heading .first-star img:nth-child(3) {
+  animation-delay: 0.6s;
+}
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.heading h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 700px) {
+  .heading h1 {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .heading h1 {
+    font-size: 1.8rem;
+  }
+}
+.heading .small-star {
+  position: absolute;
+  top: 90vh;
+  left: 9%;
+  width: 47px;
+  height: 44px;
+}
+@media screen and (min-width: 700px) {
+  .heading .small-star {
+    width: 72px;
+    height: 67px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .heading .small-star {
+    width: 25px;
+    height: 35px;
+  }
+}
+.heading .small-star .small01 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: auto;
+  animation-delay: 0s;
+}
+@media screen and (min-width: 700px) {
+  .heading .small-star .small01 {
+    width: 32px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .heading .small-star .small01 {
+    width: 14px;
+  }
+}
+.heading .small-star .small02 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  height: auto;
+  animation-delay: 1s;
+}
+@media screen and (min-width: 700px) {
+  .heading .small-star .small02 {
+    width: 17px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .heading .small-star .small02 {
+    width: 6px;
+  }
+}
+.heading .small-star img {
+  opacity: 0;
+  animation: twinkle2 4s infinite;
+}
+@keyframes twinkle2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.prologue {
+  padding-block: 120px 300px;
+}
+.prologue p {
+  margin-bottom: 48px;
+}
+
+.calendar-scroll {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin-inline: 16px;
+}
+@media screen and (min-width: 700px) {
+  .calendar-scroll {
+    overflow: visible;
+    scroll-snap-type: none;
+    margin-inline: 56px;
+  }
+}
+
+.calendar-list {
+  display: flex;
+  gap: 16px;
+  padding: 0 16px;
+}
+@media screen and (min-width: 700px) {
+  .calendar-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 950px) {
+  .calendar-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.calendar-list .calendar-item {
+  flex: 0 0 80vw;
+  scroll-snap-align: start;
+}
+@media screen and (min-width: 700px) {
+  .calendar-list .calendar-item {
+    flex: initial;
+    width: 100%;
+  }
+}
+
+.calendar-inner {
+  position: relative;
+  width: 100%;
+}
+.calendar-inner .calendar-img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.calendar-inner .calendar-img img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+.calendar-inner .calendar-img::after {
+  position: absolute;
+  display: block;
+  content: "";
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  pointer-events: all;
+  z-index: 2;
+}
+
+.accordion {
+  display: flex;
+  align-items: end;
+  border-radius: 0 0 10px 10px;
+  padding: 16px 3%;
+}
+@media screen and (min-width: 950px) {
+  .accordion {
+    padding-inline: 5%;
+  }
+}
+.calendar-item.open .accordion {
+  flex-direction: column;
+}
+.jan .accordion {
+  background-color: #C39252;
+}
+.feb .accordion {
+  background-color: #F6BF6F;
+}
+.mar .accordion {
+  background-color: #FCD298;
+}
+.apr .accordion {
+  background-color: #DF8483;
+}
+.may .accordion {
+  background-color: #AEC9D4;
+}
+.jun .accordion {
+  background-color: #5C7347;
+}
+.jul .accordion {
+  background-color: #4D89A5;
+}
+.aug .accordion {
+  background-color: #0E4351;
+}
+.sep .accordion {
+  background-color: #D89E33;
+}
+.oct .accordion {
+  background-color: #884E67;
+}
+.nov .accordion {
+  background-color: #990A10;
+}
+.dec .accordion {
+  background-color: #8A540E;
+}
+.backcover .accordion {
+  background-color: #FEDB9E;
+}
+.backcover .accordion .full p:last-of-type {
+  margin-bottom: 40px;
+}
+.accordion-text {
+  flex-grow: 1;
+  text-align: center;
+}
+.calendar-item.open .accordion-text {
+  width: 100%;
+}
+@media screen and (max-width: 370px) {
+  .accordion-text {
+    font-size: 1.4rem;
+  }
+}
+.accordion-text .pc-br {
+  display: inline;
+}
+@media screen and (max-width: 370px) {
+  .accordion-text .pc-br {
+    display: none;
+  }
+}
+@media screen and (min-width: 700px) {
+  .accordion-text .pc-br {
+    display: none;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .accordion-text .pc-br {
+    display: inline;
+  }
+}
+.accordion-text .full {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: translateY(-8px);
+  transition: opacity 0.3s ease-in-out, max-height 0.8s ease-in-out, transform 0.5s ease-in-out;
+}
+.calendar-item.open .accordion-text .full {
+  opacity: 1;
+  max-height: 3000px;
+  /* 中身が入る最大想定値 */
+  transform: translateY(0);
+  margin-bottom: 8px;
+}
+.accordion-text .full p {
+  margin-bottom: 24px;
+}
+.accordion-text .full p:last-child {
+  margin-bottom: 0;
+}
+.accordion-text .ng-img-flexbox {
+  display: flex;
+  gap: 8px;
+}
+.accordion-text .ng-img-flexbox img {
+  min-width: 0;
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 1;
+}
+.accordion-text .ending {
+  border-top: 1.5px dashed #03276A;
+  padding-top: 32px;
+}
+
+.calendar-item.open .short {
+  display: none;
+}
+
+.accordion-trigger {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border: 0.5px solid #E6DFF8;
+  border-radius: 50%;
+}
+@media screen and (min-width: 700px) {
+  .accordion-trigger {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media screen and (min-width: 950px) {
+  .accordion-trigger {
+    margin-bottom: 8px;
+  }
+}
+.calendar-item.open .accordion-trigger {
+  transform: rotate(180deg);
+  margin-inline: auto 16px;
+}
+.accordion-trigger .arrow {
+  position: absolute;
+  color: #E6DFF8;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+}
+.accordion-trigger .arrow polygon {
+  fill: #E6DFF8;
+}
+.font-navy .accordion-trigger {
+  border: 0.5px solid #03276A;
+}
+.font-navy .accordion-trigger .arrow {
+  color: #03276A;
+}
+.font-navy .accordion-trigger .arrow polygon {
+  fill: #03276A;
+}/*# sourceMappingURL=style.css.map */

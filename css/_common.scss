@@ -1,0 +1,85 @@
+@use "mixin" as m;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #022B71;
+    font-family: "Yu Mincho", "YuMincho", "MS PMincho", serif;
+    font-size: 1.6rem;
+    font-weight: 200;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #F4F4F4;
+}
+
+a {
+    text-decoration: none;
+    color: #F4F4F4;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+li {
+    list-style-type: none;
+}
+
+// --------------------------------------------------------
+
+
+.font-navy {
+    color: #03276a;
+    font-weight: 400;
+}
+
+
+// ---------------------------- section ----------------------------
+
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: center;
+    margin-block: 24px 64px;
+
+    @include m.tab {
+        font-size: 2rem;
+    }
+
+    @include m.ssp {
+        font-size: 1.6rem;
+    }
+}
+
+
+// ---------------------------- footer ----------------------------
+
+footer {
+    border-top: 0.5px solid #F4F4F4;
+    margin-top: 200px;
+    padding: 40px 16px 16px;
+}
+
+.sns {
+    height: 34px;
+    width: auto;
+    margin-bottom: 16px;
+
+    @include m.tab {
+        height: 45px;
+    }
+
+    a {
+        height: 100%;
+
+        img {
+            height: 100%;
+        }
+    }
+
+}
