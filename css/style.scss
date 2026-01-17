@@ -328,7 +328,7 @@
     .backcover & {
         background-color: #FEDB9E;
 
-        .full p:last-of-type {
+        .full>p:last-of-type {
             margin-bottom: 40px;
         }
     }
@@ -468,3 +468,4 @@
     }
 
 }
+
